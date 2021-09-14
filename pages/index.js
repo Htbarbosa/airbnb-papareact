@@ -10,7 +10,7 @@ export default function Home ({ exploreData, cardsData }) {
   return (
     <div className="">
       <Head>
-        <title>Air BNB Copy</title>
+        <title>Air BNB-Copy</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -19,7 +19,7 @@ export default function Home ({ exploreData, cardsData }) {
 
       <main className="max-w-7xl mx-auto px-8 sm:px-16">
         <section className="pt-6">
-          <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
+          <h2 className="text-4xl font-semibold pb-5 bg-blue-200 rounded-full justify-center items-center text-center align-middle p-4">Explore Nearby</h2>
 
           {/* Pull some data from a server - API endpoints */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
