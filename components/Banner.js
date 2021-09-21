@@ -7,8 +7,8 @@ function Banner () {
                 objectFit="cover"
             />
             <div className="absolute top-1/2 w-full text-center">
-                <p className="text-sm sm:text-lg font-semibold">Not sure where to go? Perfect.</p>
-                <button className="text-purple-500 bg-white p-5 rounded-full shadow-md font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150">I'm flexible</button>
+                <p className="text-sm sm:text-lg font-semibold">Just a Next.js and Tailwindcss study</p>
+                <button className="text-purple-500 bg-white p-5 rounded-full shadow-md font-bold my-3 hover:shadow-xl active:scale-90 transition duration-150">I'm Shadowy</button>
             </div>
         </div>
     );
