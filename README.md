@@ -1,29 +1,91 @@
-# Next.js + Tailwind CSS Example
+# Airbnb Clone
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+A full-stack Airbnb clone built with Next.js, React, and Tailwind CSS. This application replicates the core features of Airbnb including property search, date selection, guest count, and interactive maps.
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+## Features
 
-## Preview
+- 🏠 Browse nearby locations and properties
+- 🔍 Search functionality with location, dates, and guest count
+- 📅 Date range picker for booking
+- 🗺️ Interactive map integration with MapBox
+- 📱 Fully responsive design
+- 🎨 Modern UI with Tailwind CSS
+- ⚡ Server-side rendering with Next.js
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+## Tech Stack
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+- **Framework**: Next.js
+- **Frontend**: React 17
+- **Styling**: Tailwind CSS 2.2 with JIT mode
+- **Maps**: react-map-gl (MapBox)
+- **Icons**: Heroicons
+- **Date Handling**: date-fns, react-date-range
+- **Geolocation**: geolib
+- **Progress Bar**: @badrap/bar-of-progress
 
-## Deploy your own
+## Getting Started
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+### Prerequisites
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+- Node.js (v12 or higher)
+- npm or yarn
 
-## How to use
+### Installation
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
+1. Clone the repository:
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+git clone https://github.com/Htbarbosa/airbnb-papareact.git
+cd airbnb-papareact
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## Project Structure
+
+```
+├── components/          # Reusable React components
+│   ├── Banner.js       # Hero banner component
+│   ├── Header.js       # Navigation header
+│   ├── Footer.js       # Footer component
+│   ├── SmallCard.js    # Location cards
+│   ├── MediumCard.js   # Category cards
+│   ├── LargeCard.js    # Featured content card
+│   ├── InfoCard.js     # Search results card
+│   └── Map.js          # MapBox integration
+├── pages/              # Next.js pages
+│   ├── index.js        # Home page
+│   ├── search.js       # Search results page
+│   └── api/            # API routes
+├── public/             # Static assets
+└── styles/             # Global styles
+```
+
+## Available Scripts
+
+- `npm run dev` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm start` - Runs the built app in production mode
+
+## Deploy
+
+Deploy the application using [Vercel](https://vercel.com):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Htbarbosa/airbnb-papareact)
+
+## License
+
+This project is for educational purposes.
